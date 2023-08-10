@@ -41,3 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Containers
+    uniqueID: 943153473
+    locked: 0
+  - name: Rubbish
+    uniqueID: 2475800879
+    locked: 0
