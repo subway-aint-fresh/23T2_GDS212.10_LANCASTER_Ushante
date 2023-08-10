@@ -34,9 +34,13 @@ public class DragAndDrop : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (isDragging && other.CompareTag(tagToCheck))
+        if (isDragging && (other.CompareTag("RubbishBin") || other.CompareTag("RecycleBin")))
         {
+            Debug.Log("Entered trigger zone: " + other.tag);
             gameObject.SetActive(false);
         }
     }
+
 }
+
+
